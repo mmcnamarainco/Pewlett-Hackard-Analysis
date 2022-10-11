@@ -1,9 +1,9 @@
-DEPARTMENTS
+-DEPARTMENTS
 -
 DEPT_NO VARCHAR FK >- DEPT_EMP.DEPT_NO
 DEPT_NAME VARCHAR
 
-EMPLOYEES
+-EMPLOYEES
 -
 EMP_NO int pk FK >- TITLES.EMP_NO
 BIRTH_DATE date
@@ -12,14 +12,14 @@ LAST_NAMEvarchar
 GENDER varchar
 HIRE_DATE date
 
-MANAGERS
+-MANAGERS
 -
 DEPT_NO varchar pk fk - departments.dept_no
 EMP_NO int pk fk - EMPLOYEES.emp_no
 FROM_DATE date
 TO_DATE date
 
-DEPT_EMP
+-DEPT_EMP
 -
 EMP_NO int pk FK >- SALARIES.EMP_NO
 DEPT_NO varchar fk
@@ -28,7 +28,7 @@ TO_DATE date
 
 
 
-SALARIES
+-SALARIES
 -
 EMP_NO int pk FK >- EMPLOYEES.EMP_NO
 SALARY int 
